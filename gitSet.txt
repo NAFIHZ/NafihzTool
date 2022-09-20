@@ -1,0 +1,58 @@
+安装位置
+  非中文 无空格
+安装目录
+Additional icon 桌面快捷方式
+    on the desktop 在桌面上
+windows Explorer interrgration 桌面右键菜单
+    git bash here
+    gie gui here
+Git LFS大文件支持
+Associate .git config files with the default text editor 配置文件默认编辑器
+Associate .sh files tobe run with Bash 关联sh格式文件
+
+设置用户签名
+  git config --global user.name
+  git config --global user.email
+
+-----------------命令
+一.基本操作
+  1 初始化本地库
+    git init
+  2 查看本地库状态
+    git status
+    1.返回当前分支位置
+    2.没有追踪过的文件
+        红色为没追踪的文件 绿色为追踪的文件
+  3 追踪文件(暂存)
+    git add xxx.xxx
+    git rm --cached xxx.xxx 从暂存区移除
+  4 提交本地库
+    git commit -m "备注" 文件名
+  5 查看版本日志
+    git reflog
+    git log 查看详细
+  6 版本穿梭
+    git reset --hard 版本号
+
+
+二.git分支操作
+  1 创建分支
+    git branch 分支名
+  2 查看分支
+    git branch -v
+  3 切换分支
+    git checkout 分支名
+  4 把指定的分支合并到当前分支上
+    git merge 分支名
+    当合并冲突时 修改完之后进行暂存提交
+    这时提交的时候不得带文件名
+
+
+三.团队开发
+    git push 推
+    git pull 拉
+    git clone 获取
+  跨团队开发
+  1 从远程库获取另一个远程库的代码
+  fork
+  
