@@ -56,3 +56,8 @@ Associate .sh files tobe run with Bash 关联sh格式文件
   1 从远程库获取另一个远程库的代码
   fork
   
+
+四.建库
+  git remote -v 查看库名
+  git remote add xxx(库名) https://xxxxxxxx.git (仓库地址)
+  git push nafihztool(库名) master
